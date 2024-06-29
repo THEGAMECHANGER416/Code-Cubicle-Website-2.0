@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    color: white;
+}
+.container h2{
+    font-weight: lighter;
+    font-size: 3rem;
+    margin: 65px;
+}
+.container h1{
+    font-weight: lighter;
+    display: inline-block;
+    font-size: 3.8rem;
+    margin-left: 60px;
+}
+.para{
+    display: inline-block;
+  width: 355px;
+  height: 108px;
+  margin-left: 30px;
+  font-weight: lighter;
+}
+.para2{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 3.2rem;
+    margin-left: 50px;
+}
+button{
+    padding: 12px;
+    background: transparent;
+    margin-left: 52px;
+    margin-top: 34px;
+    color: white;
+    cursor: pointer;
+    font-family:"Montserrat", sans-serif;
+}
+.but1{
+    border: 2px solid blue;
+}
+.but2{
+    border: 2px solid red;
+}
+.but1:hover{
+    color: black;
+    background-color: blue;
+}
+.but2:hover{
+    color: black;
+    background-color: red;
+}
+#timer{
+    font-weight: lighter;
+    font-size: 3.2rem;
+    margin-top: 31px;
+    margin-left: 48px;
+}
