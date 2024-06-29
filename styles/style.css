@@ -8,34 +8,40 @@ body{
     font-style: normal;
     color: white;
 }
+.container{
+    display: flex;
+    flex-direction: row;
+}
 .container h2{
     font-weight: lighter;
-    font-size: 3rem;
-    margin: 65px;
+    font-size: 8rem;
+    margin-left: 50px;
+    margin-top: 5rem;
+    
 }
 .container h1{
     font-weight: lighter;
     display: inline-block;
-    font-size: 3.8rem;
-    margin-left: 60px;
+    font-size: 8rem;
+    margin-left: 50px;
 }
 .para{
-    display: inline-block;
-  width: 355px;
+  display: inline-block;
+  width: 719px;
   height: 108px;
-  margin-left: 30px;
-  font-weight: lighter;
+  margin-left: 50px;
 }
 .para2{
     font-weight: lighter;
     font-style: italic;
     font-size: 3.2rem;
     margin-left: 50px;
+
 }
 button{
     padding: 12px;
     background: transparent;
-    margin-left: 52px;
+    margin-left: 50px;
     margin-top: 34px;
     color: white;
     cursor: pointer;
@@ -43,6 +49,7 @@ button{
 }
 .but1{
     border: 2px solid blue;
+    
 }
 .but2{
     border: 2px solid red;
@@ -59,5 +66,14 @@ button{
     font-weight: lighter;
     font-size: 3.2rem;
     margin-top: 31px;
-    margin-left: 48px;
+    margin-left: 50px;
+}
+
+.grLogo{
+    margin: 15px;
+    margin-top: 10px;
+}
+.boxLogo{
+    margin: 15px;
+    margin-top: 10px;
 }
