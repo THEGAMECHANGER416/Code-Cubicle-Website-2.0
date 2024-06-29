@@ -1,135 +1,270 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: black;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    color: white;
+body {
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: white;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-
-
+.container {
+  display: flex;
+  flex-direction: row;
 }
 .ctx {
-    width: 625px;
+  width: 625px;
 }
 
-
-
 .table {
-    /* height: 1200px; */
-}
-.table {
-    margin-left: -200px;
-    width: 70%;
-    height: 80%;
+  margin-left: -200px;
+  width: 70%;
+  height: 80%;
 }
 
 .car img {
-    margin-bottom: -80px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    width: 50px;
-    height: 70px;
+  margin-bottom: -80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 70px;
 }
 
 .vl {
-    max-width: fit-content;
-
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 5px solid white;
-    height: 400px;
-    border-radius: 25px;
+  max-width: fit-content;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid white;
+  height: 400px;
+  border-radius: 25px;
 }
 
 .days {
-    display: inline-block;
-    width: 70px;
-    direction: rtl;
-    color: red;
-    margin-left: 65px;
-    font-size: small;
+  display: inline-block;
+  width: 70px;
+  direction: rtl;
+  color: #f15a22;
+  margin-left: 65px;
+  font-size: small;
 }
 
 .hours {
-    display: inline-block;
-    color: red;
-    width: 50px;
-    direction: rtl;
-    margin-left: 65px;
-    font-size: small;
+  display: inline-block;
+  color: #f15a22;
+  width: 50px;
+  direction: rtl;
+  margin-left: 65px;
+  font-size: small;
 }
 
-
-.container h2{
-    font-weight: lighter;
-    font-size: 8rem;
-    margin-left: 50px;
-    margin-top: 5rem;
-    
+.container h2 {
+  font-weight: lighter;
+  font-size: 8rem;
+  margin-left: 50px;
+  margin-top: 5rem;
 }
-.container h1{
-    font-weight: lighter;
-    display: inline-block;
-    font-size: 8rem;
-    margin-left: 50px;
+.container h1 {
+  font-weight: lighter;
+  display: inline-block;
+  font-size: 8rem;
+  margin-left: 50px;
 }
-.para{
+.para {
   display: inline-block;
   width: 550px;
   height: 108px;
   margin-left: 50px;
 }
-.para2{
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 3.2rem;
-    margin-left: 50px;
-
+.para2 {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 3.2rem;
+  margin-left: 50px;
 }
-button{
-    padding: 12px;
-    background: transparent;
-    margin-left: 50px;
-    margin-top: 34px;
-    color: white;
-    cursor: pointer;
-    font-family:"Montserrat", sans-serif;
+button {
+  padding: 12px;
+  background: transparent;
+  margin-left: 50px;
+  margin-top: 34px;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
-.but1{
-    border: 2px solid blue;
-    
+.but1 {
+  border: 2px solid blue;
 }
-.but2{
-    border: 2px solid red;
+.but2 {
+  border: 2px solid #f15a22;
 }
-.but1:hover{
-    color: black;
-    background-color: blue;
+.but1:hover {
+  color: black;
+  background-color: blue;
 }
-.but2:hover{
-    color: black;
-    background-color: red;
+.but2:hover {
+  color: black;
+  background-color: #f15a22;
 }
-#timer{
-    font-weight: lighter;
-    font-size: 3.2rem;
-    margin-top: 31px;
-    margin-left: 50px;
+#timer {
+  font-weight: lighter;
+  font-size: 3.2rem;
+  margin-top: 31px;
+  margin-left: 50px;
 }
 
-.grLogo{
-    margin: 15px;
-    margin-top: 10px;
+.grLogo,
+.boxLogo {
+  margin: 15px;
+  margin-top: 10px;
 }
-.boxLogo{
-    margin: 15px;
-    margin-top: 10px;
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    align-items: center;
+  }
+  .ctx {
+    width: 90%;
+    padding: 20px;
+  }
+  .table {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container h2 {
+    font-size: 5rem;
+    margin-top: 2rem;
+  }
+  .container h1 {
+    font-size: 5rem;
+  }
+  .para {
+    width: 90%;
+  }
+  .para2,
+  #timer {
+    font-size: 2rem;
+  }
+  button {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .but1,
+  .but2 {
+    font-size: 1rem;
+  }
+
+  .table {
+    display: none; /* Hide the table image */
+  }
+  .vl {
+    height: 200px;
+  }
+
+  /* Adjust image sizes */
+  .grLogo img,
+  .boxLogo img,
+  .car img {
+    width: 40px;
+    height: auto;
+  }
+
+  .days {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .hours {
+    margin-left: 0px;
+    margin-right: 25px;
+  }
+
+  /* Move left-img upwards */
+  .left-img {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    align-items: center;
+  }
+  .container h2 {
+    font-size: 3rem;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  .para,
+  .para2,
+  #timer {
+    font-size: 1.5rem;
+  }
+  .days,
+  .hours {
+    font-size: smaller;
+    margin-left: 20px;
+  }
+  .ctx {
+    width: 100%;
+  }
+  .table {
+    display: none; /* Hide the table image */
+  }
+
+  /* Further adjust image sizes */
+  .grLogo img,
+  .boxLogo img,
+  .car img {
+    width: 30px;
+    height: auto;
+  }
+
+  /* Move left-img upwards */
+  .left-img {
+    transform: translateY(-100px);
+  }
+  .days {
+    margin-left: -10px;
+    margin-right: 50px;
+  }
+  .hours {
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 590px) {
+  .container h2 {
+    margin-left: 0px;
+  }
+  .container h1 {
+    margin-left: 0px;
+  }
+  .para {
+    margin-left: 0px;
+  }
+  .para2 {
+    margin-left: 0px;
+  }
+  button {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  #timer {
+    margin-left: 30px;
+  }
+
+  .days {
+    margin-left: -20px;
+    /* padding-right: 10px; */
+    margin-right: 20px;
+  }
+  .hours {
+    margin-left: 0px;
+    margin-right: 25px;
+  }
 }
