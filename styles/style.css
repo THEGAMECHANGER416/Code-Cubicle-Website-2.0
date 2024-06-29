@@ -8,6 +8,11 @@ body {
   font-style: normal;
   color: white;
 }
+
+.container {
+  background-image: url(../image-45.png);
+  object-fit: contain;
+}
 .container {
   display: flex;
   flex-direction: row;
