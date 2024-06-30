@@ -263,7 +263,7 @@ sup {
 
 .result-time-container .timeline-time span {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .result-time-container .timeline-title span {
@@ -380,42 +380,42 @@ sup {
 
 .circular-table {
     position: absolute;
-    top: 350px;
+    top: 330px;
     right: 115px;
     z-index: 6;
 }
 
 .projector {
     position: absolute;
-    top: 375px;
+    top: 355px;
     right: 145px;
     z-index: 6;
 }
 
 .projector-light {
     position: absolute;
-    top: 302px;
+    top: 282px;
     right: 30px;
     z-index: 7;
 }
 
 .projector-screen {
     position: absolute;
-    top: 300px;
+    top: 280px;
     right: 5px;
     z-index: 6;
 }
 
 .projector-screen-light {
     position: absolute;
-    top: 300px;
+    top: 280px;
     right: 15px;
     z-index: 7;
 }
 
 #chair-white_1 {
     position: absolute;
-    top: 365px;
+    top: 345px;
     right: 180px;
     z-index: 5;
     width: 50px;
@@ -423,9 +423,73 @@ sup {
 
 #chair-white_2 {
     position: absolute;
-    top: 420px;
+    top: 400px;
     right: 135px;
     z-index: 5;
     width: 50px;
     transform: rotate(-60deg);
+}
+
+.presentation-time-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 360px;
+    right: -20px;
+    color: #FFF;
+    line-height: 1;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 5;
+}
+
+.presentation-time-container .timeline-time span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.presentation-time-container .timeline-title span {
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+
+.right-table-slab-vertical {
+    position: absolute;
+    bottom: 0px;
+    right: 114px;
+}
+
+.right-table-slab-horizontal {
+    position: absolute;
+    bottom: 110px;
+    right: 0px;
+}
+
+.reporting-time-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+    color: #3B3B3B;
+    line-height: 1;
+    text-align: center;
+    z-index: 5;
+}
+
+.reporting-time-container .timeline-time span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.reporting-time-container .timeline-title span {
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.clock {
+    position: absolute;
+    bottom: 50px;
+    right: 133px;
 }
