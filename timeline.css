@@ -14,6 +14,7 @@
     width: 100%;
     min-height: 650px;
     max-height: 100vh;
+    position: relative;
 }
 
 .timeline-body-left {
@@ -31,8 +32,8 @@
 .timeline-body-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
     background-color: #101010;
@@ -82,7 +83,7 @@
 }
 
 .beggining-time-container .timeline-time span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     /* -webkit-text-stroke: 1px black; Removed the stroke */
 }
@@ -99,6 +100,11 @@
     left: 10px;
 }
 
+sup {
+    font-size: .5em;
+    vertical-align: super;
+}
+
 .day-one-time-container {
     position: absolute;
     color: #1A1A1A;
@@ -109,12 +115,12 @@
 }
 
 .day-one-time-container .timeline-time span {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
 .day-one-time-container .timeline-title span {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 800;
 }
 
@@ -171,7 +177,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 75px;
+    bottom: 80px;
     left: 40px;
     /* Rotate text with transform */
     transform: rotate(50deg);
@@ -180,11 +186,246 @@
 }
 
 .elimination-time-container .timeline-time span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
 .elimination-time-container .timeline-title span {
     font-size: .9rem;
     font-weight: 800;
+}
+
+.check-mark {
+    position: absolute;
+    bottom: 155px;
+    left: 25px;
+    fill: #086700;
+}
+
+.cross-check {
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    fill: #086700;
+}
+
+#circle_1 {
+    position: absolute;
+    bottom: 180px;
+    left: 80px;
+}
+
+#circle_2 {
+    position: absolute;
+    bottom: 120px;
+    left: 150px;
+}
+
+#circle_3 {
+    position: absolute;
+    bottom: 40px;
+    left: 190px;
+}
+
+.fire-exit {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.timeline-highlight-red-box {
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    height: 8px;
+    background-color: #6B0000;
+    z-index: 5;
+    right: calc(50% - 50px);
+}
+
+.result-time-container {
+    position: absolute;
+    bottom: 50px;
+    right: calc(50% - 83px);
+    z-index: 5;
+    text-align: center;
+    background: linear-gradient(to right, #000 47%, #FFF 47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.result-time-container .timeline-date span {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.result-time-container .timeline-time span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.result-time-container .timeline-title span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.timeline-body-right-logo {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.podium {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+.final-results-time-container {
+    position: absolute;
+    top: 120px;
+    right: 90px;
+    z-index: 5;
+    text-align: center;
+    color: #FFF;
+    line-height: 1;
+}
+
+.final-results-time-container .timeline-time span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.final-results-time-container .timeline-title span {
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.day-three-time-container {
+    position: absolute;
+    color: #FFF;
+    background-color: transparent;
+    top: 50px;
+    left: 50px;
+    line-height: 1;
+}
+
+.day-three-time-container .timeline-time span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.day-three-time-container .timeline-title span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.cafetaria-table {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    z-index: 6;
+}
+
+#circular-chair_1 {
+    position: absolute;
+    top: 235px;
+    left: 185px;
+    z-index: 5;
+}
+
+#circular-chair_2 {
+    position: absolute;
+    top: 235px;
+    left: 75px;
+    z-index: 5;
+}
+
+#circular-chair_3 {
+    position: absolute;
+    top: 283px;
+    left: 185px;
+    z-index: 5;
+}
+
+#circular-chair_4 {
+    position: absolute;
+    top: 283px;
+    left: 75px;
+    z-index: 5;
+}
+
+.lunch-time-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 340px;
+    left: 100px;
+    color: #FFF;
+    line-height: 1;
+}
+
+.lunch-time-container .timeline-time span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.lunch-time-container .timeline-title span {
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.circular-table {
+    position: absolute;
+    top: 350px;
+    right: 115px;
+    z-index: 6;
+}
+
+.projector {
+    position: absolute;
+    top: 375px;
+    right: 145px;
+    z-index: 6;
+}
+
+.projector-light {
+    position: absolute;
+    top: 302px;
+    right: 30px;
+    z-index: 7;
+}
+
+.projector-screen {
+    position: absolute;
+    top: 300px;
+    right: 5px;
+    z-index: 6;
+}
+
+.projector-screen-light {
+    position: absolute;
+    top: 300px;
+    right: 15px;
+    z-index: 7;
+}
+
+#chair-white_1 {
+    position: absolute;
+    top: 365px;
+    right: 180px;
+    z-index: 5;
+    width: 50px;
+}
+
+#chair-white_2 {
+    position: absolute;
+    top: 420px;
+    right: 135px;
+    z-index: 5;
+    width: 50px;
+    transform: rotate(-60deg);
 }
