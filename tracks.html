@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Cubicle 2.0 Tracks</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left {
+            width: 50%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .right {
+            width: 50%;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header img {
+            width: 200px;
+            height: auto;
+        }
+        .track-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .track-list div {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .track-list img {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .track-list span {
+            font-size: 1.5em;
+        }
+        .image-container img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header">
+                <img src="./assets/images/Code.svg" alt="Code">
+            </div>
+            <div class="track-list">
+                <div>
+                    <img src="./assets/images/Track 1.svg" alt="Track 1">
+                    <span>Track 1</span>
+                </div>
+                <div>
+                    <img src="./assets/images/Track 2.svg" alt="Track 2">
+                    <span>Track 2</span>
+                </div>
+                <div>
+                    <img src="./assets/images/Track 3.svg" alt="Track 3">
+                    <span>Track 3</span>
+                </div>
+                <div>
+                    <img src="./assets/images/Track 4.svg" alt="Track 4">
+                    <span>Track 4</span>
+                </div>
+                <div>
+                    <img src="./assets/images/Track 5.svg" alt="Track 5">
+                    <span>Track 5</span>
+                </div>
+                <div>
+                    <img src="./assets/images/Track 6.svg" alt="Track 6">
+                    <span>Track 6</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <img src="./assets/images/Cubicle.svg" alt="Cubicle 2.0">
+            </div>
+            <div class="image-container">
+                <img src="./assets/images/CubicleImage.svg" alt="Cubicle Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

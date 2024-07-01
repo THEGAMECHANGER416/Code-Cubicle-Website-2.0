@@ -1,0 +1,42 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .header img {
+        width: 150px;
+    }
+    .track-list img {
+        width: 100px;
+    }
+    .track-list span {
+        font-size: 1em;
+    }
+    .image-container img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header img {
+        width: 100px;
+    }
+    .track-list img {
+        width: 80px;
+    }
+    .track-list span {
+        font-size: 0.8em;
+    }
+    .image-container img {
+        width: 150px;
+    }
+}
