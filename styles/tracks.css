@@ -1,42 +1,97 @@
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    animation: fadeIn 2s ease-in-out;
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, white 40%, black 40%);
+    margin: 0;
+    padding: 0;
+}
+
+
+.vertical-flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20%; /* Adjust the value as needed */
+}
+
+
+.vertical-heading-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the left */
+    margin-bottom: 20px;
+}
+
+
+.horizontal-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.track-heading {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+}
+
+.track-list {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.logo, .heading-logo, .vector-logo, .track-logo, .geek-room-logo-img, .another-svg-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.geek-room-logo {
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
-    .header img {
-        width: 150px;
+    .vertical-heading-flex {
+        flex-direction: row;
+        justify-content: center;
     }
-    .track-list img {
-        width: 100px;
+
+    .track-item {
+        flex-direction: column;
+        align-items: center;
     }
-    .track-list span {
-        font-size: 1em;
-    }
-    .image-container img {
-        width: 200px;
+
+    .vector-logo, .track-logo {
+        margin: 5px 0;
     }
 }
 
 @media (max-width: 480px) {
-    .header img {
-        width: 100px;
+    .track-item {
+        flex-direction: column;
+        align-items: center;
     }
-    .track-list img {
-        width: 80px;
-    }
-    .track-list span {
-        font-size: 0.8em;
-    }
-    .image-container img {
-        width: 150px;
+
+    .vector-logo, .track-logo {
+        margin: 5px 0;
     }
 }
