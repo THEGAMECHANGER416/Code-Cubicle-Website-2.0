@@ -15,8 +15,9 @@
     align-items: center;
     background-color: transparent;
     aspect-ratio: 1/1;
-    width: 800px;
-    height: 800px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     position: relative;
     z-index: 1;
     overflow: hidden;
