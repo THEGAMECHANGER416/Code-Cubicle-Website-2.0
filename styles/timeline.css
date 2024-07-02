@@ -5,15 +5,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.timeline-container-parent {
+    display: flex;
+    flex-direction: row;
+}
+
 .timeline-container {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     aspect-ratio: 1/1;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
+    width: 800px;
+    height: 800px;
     position: relative;
     z-index: 1;
     overflow: hidden;
