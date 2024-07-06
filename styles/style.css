@@ -25,6 +25,7 @@ body {
 }
 .ctx {
   width: 625px;
+  margin-left: 110px;
 }
 
 .table {
@@ -33,13 +34,16 @@ body {
   height: 80%;
 }
 
-.car img {
+.car_img {
   margin-bottom: -80px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50px;
   height: 70px;
+  position: relative;
+  --leftPos:0;
+  top: var(--leftPos);
 }
 
 .vl {
@@ -129,7 +133,10 @@ button {
   margin: 15px;
   margin-top: 10px;
 }
-
+.left-img{
+  position: fixed;
+  z-index: 100;
+}
 /* Media Queries */
 @media (max-width: 1200px) {
   .container {
@@ -179,7 +186,7 @@ button {
   /* Adjust image sizes */
   .grLogo img,
   .boxLogo img,
-  .car img {
+  .car_img {
     width: 40px;
     height: auto;
   }
@@ -229,7 +236,7 @@ button {
   /* Further adjust image sizes */
   .grLogo img,
   .boxLogo img,
-  .car img {
+  .car_img {
     width: 30px;
     height: auto;
   }
@@ -277,5 +284,19 @@ button {
   .hours {
     margin-left: 0px;
     margin-right: 25px;
+  }
+}
+@media only screen and (max-width:450px){
+  .left-img{
+    display: flex;
+    position: relative;
+    bottom: 440px;
+  }
+  .car,.vl{
+    display: none;
+  }
+  .ctx{
+    position: relative;
+    right: 115px;
   }
 }
