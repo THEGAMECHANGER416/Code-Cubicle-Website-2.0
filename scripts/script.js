@@ -19,3 +19,9 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+const updateCar = () =>{
+  const {scrollTop,scrollHeight}=document.documentElement;
+  const scrollPercent = `${(scrollTop/(scrollHeight-window.innerHeight)) * 100}%`;
+  document.querySelector('.car_img').style.setProperty('--leftPos',scrollPercent);
+}
+document.addEventListener('scroll',updateCar);
