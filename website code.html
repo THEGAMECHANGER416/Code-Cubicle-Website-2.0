@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Section</title>
+</head>
+<body>
+    <div class="about">
+        <div class="content">
+            <h1 id="ab">About</h1>
+            <p>
+                Whether you're a seasoned coder or an enthusiastic beginner, <span id="cc">Code Cubicle 2.0</span> backs you all the way!!!
+                It offers a fantastic opportunity to brainstorm and collaborate with like-minded individuals. It’s more than 
+                just participating and coding; it's about building a strong tech network. Meet IT professionals, 
+                tech enthusiasts, and potential mentors who can guide and inspire you. Compete hard for awesome prizes, 
+                including cash rewards, goodies, and more. It’s your chance to take on the world, bring out groundbreaking 
+                solutions, and take it further. Join us at Gurugram’s Microsoft Office and unleash your strengths!!  
+            </p>
+            <p>
+                <span id="gr">Geek Room</span> is a motivated coding community dedicated to bringing out the best potential in aspiring developers. 
+                Present across multiple colleges, we conduct dynamic hackathons, workshops, and skill-enhancement programs. Whether 
+                you're just starting your journey or simply curious about the latest trends, Geek Room offers a space to connect, 
+                learn, and share your interests.                                  
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="robo.svg" alt="Robot" />
+        </div>
+    </div>
+    <img id="myImage" src="one.png" alt="The Image">
+    <script>
+        const image = document.getElementById("myImage");
+        let imageX = 0;
+        let imageY = 0;
+        let targetX = 0;
+        let targetY = 0;
+        const lerpSpeed = 0.05; // Adjust for slower or faster motion
+    
+        // Ensure image fits the page while maintaining aspect ratio
+        function fitImage() {
+          const imageAspectRatio = image.naturalWidth / image.naturalHeight;
+          const windowAspectRatio = window.innerWidth / window.innerHeight;
+          
+    
+          if (imageAspectRatio > windowAspectRatio) {
+            image.style.width = "100%";
+            image.style.height = "auto";
+          } else {
+            image.style.width = "auto";
+            image.style.height = "100%";
+          }
+        }
+    
+        window.addEventListener("resize", fitImage);
+        fitImage(); // Call initially to fit on page load
+    
+        document.addEventListener("mousemove", function(event) {
+          targetX = event.clientX - image.width / 2;
+          targetY = event.clientY - image.height / 2;
+        });
+    
+        function updateImagePosition() {
+          imageX = lerp(imageX, targetX, lerpSpeed);
+          imageY = lerp(imageY, targetY, lerpSpeed);
+    
+          // Ensure image stays within document boundaries
+          //imageX = Math.max(0, Math.min(imageX, window.innerWidth - image.width));
+          //imageY = Math.max(0, Math.min(imageY, window.innerHeight - image.height));
+    
+          // Update image position using CSS translate
+          image.style.transform = `translate(${imageX * 10}px, ${imageY * 10}px)`;
+    
+          requestAnimationFrame(updateImagePosition);
+        }
+    
+        updateImagePosition();
+    
+        function lerp(start, end, speed) {
+          return start + (end - start) * speed / 180;
+        }
+      </script>
+</body>
+</html>
